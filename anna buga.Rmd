@@ -1,0 +1,91 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code.
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*.
+
+```{r}
+plot(cars)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+```{r}
+student_name<-c("Amy", "Bob", "Chuck", "Daisy", "Ellie", "Frank", "George", "Helen")
+age<-c(27, 55, 34, 42, 20, 27, 34, 42)
+gender<-c("F", "M", "M", "F", "F", "M", "F", "F" ) 
+gpa<-c(3.26, 3.75, 2.98, 3.40, 2.75,  3.32, 3.68, 3.97)
+
+
+student_info<-data.frame(student_name, age, gender, gpa)
+
+print(student_info
+```
+
+```{r}
+
+```
+
+``` {)}
+```
+
+```{r}
+student_info[2:3,2]
+
+
+```
+
+```{r}
+studen
+
+```
+
+```{r}
+student_info[2:3, 2:3]
+
+```
+
+```{r}
+student_info[2,1:4]
+
+```
+
+```{r}
+student_info[1:2,]
+
+```
+
+```{r}
+student_info[1:5,]
+
+```
+
+```{r}
+
+pie(student_info$gpa, labels = student_name)
+```
+
+```{r}
+student_info$age
+
+```
+
+```{r}
+student_info$gender
+
+```
+
+```{r}
+table(student_info$age)
+
+```
+
+```{r}
+table(student_info$age, student_info$gender)
+
+```
